@@ -11,7 +11,7 @@
         <!--Scene View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ARSceneViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SceneViewController" customModule="MyARApp" customModuleProvider="target" sceneMemberID="viewController">
                     <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" autoenablesDefaultLighting="YES" preferredRenderingAPI="2" id="4g6-Ba-ajj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

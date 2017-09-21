@@ -7,12 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		663859431F7409B9006C27C9 /* doritos-logo-big.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6658F6B31F74088D0087415E /* doritos-logo-big.jpg */; };
 		6658F6091F73A3560087415E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658F6081F73A3560087415E /* AppDelegate.swift */; };
 		6658F60E1F73A3560087415E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658F60C1F73A3560087415E /* Main.storyboard */; };
 		6658F6101F73A3560087415E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6658F60F1F73A3560087415E /* Assets.xcassets */; };
 		6658F6131F73A3560087415E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658F6111F73A3560087415E /* LaunchScreen.storyboard */; };
 		6658F61D1F73B5A60087415E /* ARSceneViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6658F61C1F73B5A60087415E /* ARSceneViewController.mm */; };
 		6658F6951F73B8630087415E /* libAR6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F6941F73B85F0087415E /* libAR6.a */; };
+		6658F69C1F73C8AB0087415E /* libartvision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F6971F73C8A80087415E /* libartvision.a */; };
+		6658F69D1F73C8AB0087415E /* libglog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F6981F73C8A80087415E /* libglog.a */; };
+		6658F69E1F73C8AB0087415E /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F6991F73C8A80087415E /* libcurl.a */; };
+		6658F69F1F73C8AB0087415E /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F69A1F73C8A80087415E /* libjpeg.a */; };
+		6658F6A01F73C8AB0087415E /* libboost_serialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F69B1F73C8A80087415E /* libboost_serialization.a */; };
+		6658F6A31F73C90E0087415E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F6A21F73C90E0087415E /* libz.tbd */; };
+		6658F6A51F73C9130087415E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F6A41F73C9130087415E /* libsqlite3.tbd */; };
+		6658F6AB1F73C9A60087415E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F6A81F73C9230087415E /* Accelerate.framework */; };
+		6658F6B01F74060D0087415E /* ARToolkitExtensions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6658F6AF1F74060D0087415E /* ARToolkitExtensions.mm */; };
+		6658F6B21F7407FB0087415E /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658F6B11F7407FB0087415E /* SceneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +86,19 @@
 		6658F6911F73B85F0087415E /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
 		6658F6921F73B85F0087415E /* ARTrackableMultiSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTrackableMultiSquare.h; sourceTree = "<group>"; };
 		6658F6941F73B85F0087415E /* libAR6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAR6.a; sourceTree = "<group>"; };
+		6658F6971F73C8A80087415E /* libartvision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libartvision.a; sourceTree = "<group>"; };
+		6658F6981F73C8A80087415E /* libglog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglog.a; sourceTree = "<group>"; };
+		6658F6991F73C8A80087415E /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		6658F69A1F73C8A80087415E /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		6658F69B1F73C8A80087415E /* libboost_serialization.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_serialization.a; sourceTree = "<group>"; };
+		6658F6A21F73C90E0087415E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6658F6A41F73C9130087415E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6658F6A61F73C9190087415E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6658F6A81F73C9230087415E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6658F6AE1F74060D0087415E /* ARToolkitExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARToolkitExtensions.h; sourceTree = "<group>"; };
+		6658F6AF1F74060D0087415E /* ARToolkitExtensions.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ARToolkitExtensions.mm; sourceTree = "<group>"; };
+		6658F6B11F7407FB0087415E /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
+		6658F6B31F74088D0087415E /* doritos-logo-big.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "doritos-logo-big.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +106,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6658F6AB1F73C9A60087415E /* Accelerate.framework in Frameworks */,
+				6658F6A51F73C9130087415E /* libsqlite3.tbd in Frameworks */,
+				6658F6A31F73C90E0087415E /* libz.tbd in Frameworks */,
 				6658F6951F73B8630087415E /* libAR6.a in Frameworks */,
+				6658F69E1F73C8AB0087415E /* libcurl.a in Frameworks */,
+				6658F69C1F73C8AB0087415E /* libartvision.a in Frameworks */,
+				6658F69F1F73C8AB0087415E /* libjpeg.a in Frameworks */,
+				6658F6A01F73C8AB0087415E /* libboost_serialization.a in Frameworks */,
+				6658F69D1F73C8AB0087415E /* libglog.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +126,9 @@
 			children = (
 				6658F65B1F73B85F0087415E /* ARToolkit */,
 				6658F6071F73A3560087415E /* MyARApp */,
+				6658F6961F73C8A80087415E /* Other Dependencies */,
 				6658F6061F73A3560087415E /* Products */,
+				6658F6A11F73C90E0087415E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,13 +143,17 @@
 		6658F6071F73A3560087415E /* MyARApp */ = {
 			isa = PBXGroup;
 			children = (
+				6658F6B31F74088D0087415E /* doritos-logo-big.jpg */,
 				6658F6081F73A3560087415E /* AppDelegate.swift */,
+				6658F6B11F7407FB0087415E /* SceneViewController.swift */,
 				6658F60C1F73A3560087415E /* Main.storyboard */,
 				6658F60F1F73A3560087415E /* Assets.xcassets */,
 				6658F6111F73A3560087415E /* LaunchScreen.storyboard */,
 				6658F6141F73A3560087415E /* Info.plist */,
 				6658F61B1F73B5A60087415E /* ARSceneViewController.h */,
 				6658F61C1F73B5A60087415E /* ARSceneViewController.mm */,
+				6658F6AE1F74060D0087415E /* ARToolkitExtensions.h */,
+				6658F6AF1F74060D0087415E /* ARToolkitExtensions.mm */,
 				6658F61A1F73B5A50087415E /* MyARApp-Bridging-Header.h */,
 			);
 			path = MyARApp;
@@ -234,6 +272,29 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		6658F6961F73C8A80087415E /* Other Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				6658F6971F73C8A80087415E /* libartvision.a */,
+				6658F6981F73C8A80087415E /* libglog.a */,
+				6658F6991F73C8A80087415E /* libcurl.a */,
+				6658F69A1F73C8A80087415E /* libjpeg.a */,
+				6658F69B1F73C8A80087415E /* libboost_serialization.a */,
+			);
+			path = "Other Dependencies";
+			sourceTree = "<group>";
+		};
+		6658F6A11F73C90E0087415E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6658F6A81F73C9230087415E /* Accelerate.framework */,
+				6658F6A61F73C9190087415E /* AVFoundation.framework */,
+				6658F6A41F73C9130087415E /* libsqlite3.tbd */,
+				6658F6A21F73C90E0087415E /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663859431F7409B9006C27C9 /* doritos-logo-big.jpg in Resources */,
 				6658F6131F73A3560087415E /* LaunchScreen.storyboard in Resources */,
 				6658F6101F73A3560087415E /* Assets.xcassets in Resources */,
 				6658F60E1F73A3560087415E /* Main.storyboard in Resources */,
@@ -308,6 +370,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6658F61D1F73B5A60087415E /* ARSceneViewController.mm in Sources */,
+				6658F6B21F7407FB0087415E /* SceneViewController.swift in Sources */,
+				6658F6B01F74060D0087415E /* ARToolkitExtensions.mm in Sources */,
 				6658F6091F73A3560087415E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +520,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9EZHJZX4M;
+				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					TARGET_PLATFORM_IOS,
 					"$(inherited)",
@@ -464,8 +529,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ARToolkit\\ SDK/lib",
 					"$(PROJECT_DIR)/ARToolkit/lib",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quentinfasquel.MyARApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,6 +548,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9EZHJZX4M;
+				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					TARGET_PLATFORM_IOS,
 					"$(inherited)",
@@ -491,8 +557,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ARToolkit\\ SDK/lib",
 					"$(PROJECT_DIR)/ARToolkit/lib",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quentinfasquel.MyARApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

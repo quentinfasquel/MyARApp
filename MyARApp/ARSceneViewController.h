@@ -10,7 +10,8 @@
 #import <SceneKit/SceneKit.h>
 
 @interface ARSceneViewController : UIViewController
-@property (weak, nonatomic) IBOutlet SCNView *sceneView;
-@property (readonly, nonatomic) SCNScene *scene;
-- (void)setupScene;
+@property (weak, nonatomic, nullable) IBOutlet SCNView *sceneView;
+- (nonnull SCNScene *)createScene;
+- (void)addTrackable:(nonnull NSString *)imagePath width:(CGFloat)width height:(CGFloat)height;
+- (void)setupTrackables;
 @end
