@@ -8,20 +8,73 @@
 
 /* Begin PBXBuildFile section */
 		6658F6091F73A3560087415E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658F6081F73A3560087415E /* AppDelegate.swift */; };
-		6658F60B1F73A3560087415E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658F60A1F73A3560087415E /* ViewController.swift */; };
 		6658F60E1F73A3560087415E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658F60C1F73A3560087415E /* Main.storyboard */; };
 		6658F6101F73A3560087415E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6658F60F1F73A3560087415E /* Assets.xcassets */; };
 		6658F6131F73A3560087415E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6658F6111F73A3560087415E /* LaunchScreen.storyboard */; };
+		6658F61D1F73B5A60087415E /* ARSceneViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6658F61C1F73B5A60087415E /* ARSceneViewController.mm */; };
+		6658F6951F73B8630087415E /* libAR6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658F6941F73B85F0087415E /* libAR6.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6658F6051F73A3560087415E /* MyARApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyARApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6658F6081F73A3560087415E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6658F60A1F73A3560087415E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6658F60D1F73A3560087415E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6658F60F1F73A3560087415E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6658F6121F73A3560087415E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6658F6141F73A3560087415E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6658F61A1F73B5A50087415E /* MyARApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyARApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		6658F61B1F73B5A60087415E /* ARSceneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSceneViewController.h; sourceTree = "<group>"; };
+		6658F61C1F73B5A60087415E /* ARSceneViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ARSceneViewController.mm; sourceTree = "<group>"; };
+		6658F65E1F73B85F0087415E /* ARVideoSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARVideoSource.h; sourceTree = "<group>"; };
+		6658F65F1F73B85F0087415E /* Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		6658F6611F73B85F0087415E /* videoLuma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = videoLuma.h; sourceTree = "<group>"; };
+		6658F6621F73B85F0087415E /* videoRGBA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = videoRGBA.h; sourceTree = "<group>"; };
+		6658F6631F73B85F0087415E /* video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = video.h; sourceTree = "<group>"; };
+		6658F6641F73B85F0087415E /* videoConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = videoConfig.h; sourceTree = "<group>"; };
+		6658F6651F73B85F0087415E /* ARTrackerSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTrackerSquare.h; sourceTree = "<group>"; };
+		6658F6661F73B85F0087415E /* ARController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARController.h; sourceTree = "<group>"; };
+		6658F6671F73B85F0087415E /* ARTracker2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTracker2D.h; sourceTree = "<group>"; };
+		6658F6681F73B85F0087415E /* ARTrackableSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTrackableSquare.h; sourceTree = "<group>"; };
+		6658F6691F73B85F0087415E /* ARTrackable2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTrackable2D.h; sourceTree = "<group>"; };
+		6658F66B1F73B85F0087415E /* arg_shader_gl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arg_shader_gl.h; sourceTree = "<group>"; };
+		6658F66C1F73B85F0087415E /* arg_mtx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arg_mtx.h; sourceTree = "<group>"; };
+		6658F66D1F73B85F0087415E /* arg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arg.h; sourceTree = "<group>"; };
+		6658F66E1F73B85F0087415E /* glStateCache2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glStateCache2.h; sourceTree = "<group>"; };
+		6658F6701F73B85F0087415E /* time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = time.h; sourceTree = "<group>"; };
+		6658F6711F73B85F0087415E /* profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = profile.h; sourceTree = "<group>"; };
+		6658F6721F73B85F0087415E /* thread_sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread_sub.h; sourceTree = "<group>"; };
+		6658F6731F73B85F0087415E /* file_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = file_utils.h; sourceTree = "<group>"; };
+		6658F6741F73B85F0087415E /* crypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		6658F6751F73B85F0087415E /* image_indexer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = image_indexer.h; sourceTree = "<group>"; };
+		6658F6761F73B85F0087415E /* log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		6658F6771F73B85F0087415E /* zip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		6658F6781F73B85F0087415E /* unzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		6658F6791F73B85F0087415E /* system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		6658F67A1F73B85F0087415E /* ioapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		6658F67B1F73B85F0087415E /* image_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = image_utils.h; sourceTree = "<group>"; };
+		6658F67C1F73B85F0087415E /* android.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = android.h; sourceTree = "<group>"; };
+		6658F67D1F73B85F0087415E /* ARTrackableAppearance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTrackableAppearance.h; sourceTree = "<group>"; };
+		6658F67E1F73B85F0087415E /* ARTrackable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTrackable.h; sourceTree = "<group>"; };
+		6658F6801F73B85F0087415E /* arMulti.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arMulti.h; sourceTree = "<group>"; };
+		6658F6811F73B85F0087415E /* arImageProc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arImageProc.h; sourceTree = "<group>"; };
+		6658F6821F73B85F0087415E /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		6658F6831F73B85F0087415E /* icpCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = icpCore.h; sourceTree = "<group>"; };
+		6658F6841F73B85F0087415E /* icpCalib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = icpCalib.h; sourceTree = "<group>"; };
+		6658F6851F73B85F0087415E /* arFilterTransMat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arFilterTransMat.h; sourceTree = "<group>"; };
+		6658F6861F73B85F0087415E /* matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		6658F6871F73B85F0087415E /* param.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = param.h; sourceTree = "<group>"; };
+		6658F6881F73B85F0087415E /* paramGL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = paramGL.h; sourceTree = "<group>"; };
+		6658F6891F73B85F0087415E /* ar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ar.h; sourceTree = "<group>"; };
+		6658F68A1F73B85F0087415E /* icp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = icp.h; sourceTree = "<group>"; };
+		6658F68B1F73B85F0087415E /* arConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arConfig.h; sourceTree = "<group>"; };
+		6658F68C1F73B85F0087415E /* ARTrackableInstantOn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTrackableInstantOn.h; sourceTree = "<group>"; };
+		6658F68D1F73B85F0087415E /* AR6_c.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AR6_c.h; sourceTree = "<group>"; };
+		6658F68E1F73B85F0087415E /* ARView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
+		6658F68F1F73B85F0087415E /* ARTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTracker.h; sourceTree = "<group>"; };
+		6658F6901F73B85F0087415E /* ARTrackerInstantOn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTrackerInstantOn.h; sourceTree = "<group>"; };
+		6658F6911F73B85F0087415E /* Platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		6658F6921F73B85F0087415E /* ARTrackableMultiSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTrackableMultiSquare.h; sourceTree = "<group>"; };
+		6658F6941F73B85F0087415E /* libAR6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAR6.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6658F6951F73B8630087415E /* libAR6.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +92,7 @@
 		6658F5FC1F73A3560087415E = {
 			isa = PBXGroup;
 			children = (
+				6658F65B1F73B85F0087415E /* ARToolkit */,
 				6658F6071F73A3560087415E /* MyARApp */,
 				6658F6061F73A3560087415E /* Products */,
 			);
@@ -55,13 +110,128 @@
 			isa = PBXGroup;
 			children = (
 				6658F6081F73A3560087415E /* AppDelegate.swift */,
-				6658F60A1F73A3560087415E /* ViewController.swift */,
 				6658F60C1F73A3560087415E /* Main.storyboard */,
 				6658F60F1F73A3560087415E /* Assets.xcassets */,
 				6658F6111F73A3560087415E /* LaunchScreen.storyboard */,
 				6658F6141F73A3560087415E /* Info.plist */,
+				6658F61B1F73B5A60087415E /* ARSceneViewController.h */,
+				6658F61C1F73B5A60087415E /* ARSceneViewController.mm */,
+				6658F61A1F73B5A50087415E /* MyARApp-Bridging-Header.h */,
 			);
 			path = MyARApp;
+			sourceTree = "<group>";
+		};
+		6658F65B1F73B85F0087415E /* ARToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				6658F65C1F73B85F0087415E /* include */,
+				6658F6931F73B85F0087415E /* lib */,
+			);
+			path = ARToolkit;
+			sourceTree = "<group>";
+		};
+		6658F65C1F73B85F0087415E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6658F65D1F73B85F0087415E /* AR6 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6658F65D1F73B85F0087415E /* AR6 */ = {
+			isa = PBXGroup;
+			children = (
+				6658F65E1F73B85F0087415E /* ARVideoSource.h */,
+				6658F65F1F73B85F0087415E /* Error.h */,
+				6658F6601F73B85F0087415E /* ARVideo */,
+				6658F6651F73B85F0087415E /* ARTrackerSquare.h */,
+				6658F6661F73B85F0087415E /* ARController.h */,
+				6658F6671F73B85F0087415E /* ARTracker2D.h */,
+				6658F6681F73B85F0087415E /* ARTrackableSquare.h */,
+				6658F6691F73B85F0087415E /* ARTrackable2D.h */,
+				6658F66A1F73B85F0087415E /* ARG */,
+				6658F66F1F73B85F0087415E /* ARUtil */,
+				6658F67D1F73B85F0087415E /* ARTrackableAppearance.h */,
+				6658F67E1F73B85F0087415E /* ARTrackable.h */,
+				6658F67F1F73B85F0087415E /* AR */,
+				6658F68C1F73B85F0087415E /* ARTrackableInstantOn.h */,
+				6658F68D1F73B85F0087415E /* AR6_c.h */,
+				6658F68E1F73B85F0087415E /* ARView.h */,
+				6658F68F1F73B85F0087415E /* ARTracker.h */,
+				6658F6901F73B85F0087415E /* ARTrackerInstantOn.h */,
+				6658F6911F73B85F0087415E /* Platform.h */,
+				6658F6921F73B85F0087415E /* ARTrackableMultiSquare.h */,
+			);
+			path = AR6;
+			sourceTree = "<group>";
+		};
+		6658F6601F73B85F0087415E /* ARVideo */ = {
+			isa = PBXGroup;
+			children = (
+				6658F6611F73B85F0087415E /* videoLuma.h */,
+				6658F6621F73B85F0087415E /* videoRGBA.h */,
+				6658F6631F73B85F0087415E /* video.h */,
+				6658F6641F73B85F0087415E /* videoConfig.h */,
+			);
+			path = ARVideo;
+			sourceTree = "<group>";
+		};
+		6658F66A1F73B85F0087415E /* ARG */ = {
+			isa = PBXGroup;
+			children = (
+				6658F66B1F73B85F0087415E /* arg_shader_gl.h */,
+				6658F66C1F73B85F0087415E /* arg_mtx.h */,
+				6658F66D1F73B85F0087415E /* arg.h */,
+				6658F66E1F73B85F0087415E /* glStateCache2.h */,
+			);
+			path = ARG;
+			sourceTree = "<group>";
+		};
+		6658F66F1F73B85F0087415E /* ARUtil */ = {
+			isa = PBXGroup;
+			children = (
+				6658F6701F73B85F0087415E /* time.h */,
+				6658F6711F73B85F0087415E /* profile.h */,
+				6658F6721F73B85F0087415E /* thread_sub.h */,
+				6658F6731F73B85F0087415E /* file_utils.h */,
+				6658F6741F73B85F0087415E /* crypt.h */,
+				6658F6751F73B85F0087415E /* image_indexer.h */,
+				6658F6761F73B85F0087415E /* log.h */,
+				6658F6771F73B85F0087415E /* zip.h */,
+				6658F6781F73B85F0087415E /* unzip.h */,
+				6658F6791F73B85F0087415E /* system.h */,
+				6658F67A1F73B85F0087415E /* ioapi.h */,
+				6658F67B1F73B85F0087415E /* image_utils.h */,
+				6658F67C1F73B85F0087415E /* android.h */,
+			);
+			path = ARUtil;
+			sourceTree = "<group>";
+		};
+		6658F67F1F73B85F0087415E /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				6658F6801F73B85F0087415E /* arMulti.h */,
+				6658F6811F73B85F0087415E /* arImageProc.h */,
+				6658F6821F73B85F0087415E /* config.h */,
+				6658F6831F73B85F0087415E /* icpCore.h */,
+				6658F6841F73B85F0087415E /* icpCalib.h */,
+				6658F6851F73B85F0087415E /* arFilterTransMat.h */,
+				6658F6861F73B85F0087415E /* matrix.h */,
+				6658F6871F73B85F0087415E /* param.h */,
+				6658F6881F73B85F0087415E /* paramGL.h */,
+				6658F6891F73B85F0087415E /* ar.h */,
+				6658F68A1F73B85F0087415E /* icp.h */,
+				6658F68B1F73B85F0087415E /* arConfig.h */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		6658F6931F73B85F0087415E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				6658F6941F73B85F0087415E /* libAR6.a */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +266,7 @@
 				TargetAttributes = {
 					6658F6041F73A3560087415E = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6658F60B1F73A3560087415E /* ViewController.swift in Sources */,
+				6658F61D1F73B5A60087415E /* ARSceneViewController.mm in Sources */,
 				6658F6091F73A3560087415E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +382,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolkit/include",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -262,6 +437,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolkit/include",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -274,12 +453,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9EZHJZX4M;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_PLATFORM_IOS,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = MyARApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolkit\\ SDK/lib",
+					"$(PROJECT_DIR)/ARToolkit/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quentinfasquel.MyARApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyARApp/MyARApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +480,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9EZHJZX4M;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_PLATFORM_IOS,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = MyARApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolkit\\ SDK/lib",
+					"$(PROJECT_DIR)/ARToolkit/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quentinfasquel.MyARApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyARApp/MyARApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
