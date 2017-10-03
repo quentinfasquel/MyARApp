@@ -190,15 +190,15 @@
     ARdouble projection[16];
     arController->getProjectionMatrix(0, projection);
     projectionMatrix = SCNMatrix4Make(projection);
-
-    // Rotation doesn't seem to work...
-    if (contextRotate90) {
-      projectionMatrix = SCNMatrix4Rotate(projectionMatrix, 90, 0, 0, -1);
-    }
-
+    
     // Flip works fine for landscapeLeft versus landscapeRight
     if (contextFlipV || contextFlipH) {
       projectionMatrix = SCNMatrix4Scale(projectionMatrix, contextFlipH ? -1 : 1, contextFlipV ? -1 : 1, 1);
+    }
+
+    // Rotation (SCNMatrix4Rotate takes radians)
+    if (contextRotate90) {
+      projectionMatrix = SCNMatrix4Rotate(projectionMatrix, (M_PI * 90)/180, 0, 0, -1);
     }
     
     // Look for trackables, and draw on each found one.

@@ -35,7 +35,7 @@
 		6658F6141F73A3560087415E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6658F61A1F73B5A50087415E /* MyARApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyARApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		6658F61B1F73B5A60087415E /* ARSceneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSceneViewController.h; sourceTree = "<group>"; };
-		6658F61C1F73B5A60087415E /* ARSceneViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ARSceneViewController.mm; sourceTree = "<group>"; };
+		6658F61C1F73B5A60087415E /* ARSceneViewController.mm */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; path = ARSceneViewController.mm; sourceTree = "<group>"; tabWidth = 2; };
 		6658F65E1F73B85F0087415E /* ARVideoSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARVideoSource.h; sourceTree = "<group>"; };
 		6658F65F1F73B85F0087415E /* Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
 		6658F6611F73B85F0087415E /* videoLuma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = videoLuma.h; sourceTree = "<group>"; };
