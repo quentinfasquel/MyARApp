@@ -1,0 +1,3 @@
+[submodule "artoolkitX"]
+	path = artoolkitX
+	url = git@github.com:quentinfasquel/artoolkitx.git
